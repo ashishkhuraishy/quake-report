@@ -4,8 +4,7 @@
     export let report: QuakeInfo;
     var style = `flex justify-center items-center rounded-full p-4 ${"bg-red-" + (Math.floor(Math.abs(report.mag) + 1) * 100)} text-sm w-10 h-10 ${report.mag < 3 ? 'text-black' : 'text-white'}`
 
-
-    $: date = new Date(report.time)
+    var date = new Date(report.time)
 </script>
 
 
